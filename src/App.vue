@@ -3,18 +3,31 @@
     <div id="app-header">
       <i class="fa fa-file-text fa-3x"> DocDriven</i>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ascii-doctor :ascii-doc-text="asciiDocText"></ascii-doctor>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AsciiDoctor from './components/AsciiDoctor.vue'
 import 'font-awesome/css/font-awesome.css'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AsciiDoctor
+  },
+  data() {
+    return {
+      asciiDocText : `
+= Hello, DocDriven!
+
+An introduction to http://docdriven.org[DocDriven].
+
+== Features
+
+* AsciiDoctor
+`
+    }
   }
 }
 </script>

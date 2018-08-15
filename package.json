@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "asciidoctor.js": "^1.5.7-rc.1",
     "font-awesome": "^4.7.0",
     "mxgraph": "^3.9.8",
     "vue": "^2.5.17"
