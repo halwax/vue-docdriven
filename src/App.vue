@@ -1,12 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <div id="app-header">
+      <i class="fa fa-file-text fa-3x"> DocDriven</i>
+    </div>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import 'font-awesome/css/font-awesome.css'
 
 export default {
   name: 'app',
@@ -17,12 +20,12 @@ export default {
 </script>
 
 <style>
-#app {
+#app-header {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 </style>
